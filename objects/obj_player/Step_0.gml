@@ -3,15 +3,58 @@ var _left = keyboard_check_pressed(vk_left);
 var _up = keyboard_check_pressed(vk_up);
 var _down = keyboard_check_pressed(vk_down);
 
-if (_right) 
-	x += 16;
-else if (_left) 
-	x -= 16;
-
-if (_up) 
-	y -= 16;
-else if (_down) 
-	y += 16;
+if (
+	_right and 
+	not collision_rectangle(
+		x + sprite_get_width(sprite_index) / 4,
+		y - sprite_get_height(sprite_index) / 4,
+		x + sprite_get_width(sprite_index) / 2,
+		y + (sprite_get_height(sprite_index) / 4) - 1,
+		tileset_collision,
+		false,
+		true
+	)
+)
+	x += step;
+else if (
+	_left and
+	not collision_rectangle(
+		x - sprite_get_width(sprite_index) / 4,
+		y - sprite_get_height(sprite_index) / 4,
+		x - (sprite_get_width(sprite_index) / 2) - 2,
+		y + (sprite_get_height(sprite_index) / 4) - 1,
+		tileset_collision,
+		false,
+		true
+	)
+) 
+	x -= step;
+else if (
+	_up and
+	not collision_rectangle(
+		x - (sprite_get_width(sprite_index) / 4) - 1,
+		y - sprite_get_height(sprite_index) / 4,
+		x + (sprite_get_width(sprite_index) / 4),
+		y - (sprite_get_height(sprite_index) / 2) - 2,
+		tileset_collision,
+		false,
+		true
+	)
+)
+	y -= step;
+else if (
+	_down and
+	not collision_rectangle(
+		x - (sprite_get_width(sprite_index) / 4) - 1,
+		y + sprite_get_height(sprite_index) / 4,
+		x + (sprite_get_width(sprite_index) / 4),
+		y + (sprite_get_height(sprite_index) / 2),
+		tileset_collision,
+		false,
+		true
+	)
+) 
+	y += step;
 
 x = clamp(
 	x, 
