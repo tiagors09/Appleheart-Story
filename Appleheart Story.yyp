@@ -26,6 +26,7 @@
     {"$GMFolder":"","%Name":"Sounds","folderPath":"folders/Sounds.yy","name":"Sounds","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sprites","folderPath":"folders/Sprites.yy","name":"Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Enitites","folderPath":"folders/Sprites/Enitites.yy","name":"Enitites","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Misc","folderPath":"folders/Sprites/Misc.yy","name":"Misc","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Tile Sets","folderPath":"folders/Tile Sets.yy","name":"Tile Sets","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Timelines","folderPath":"folders/Timelines.yy","name":"Timelines","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
