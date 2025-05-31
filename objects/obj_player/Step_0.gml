@@ -67,3 +67,14 @@ y = clamp(
 	sprite_get_height(sprite_index) / 2,
 	room_height - (sprite_get_height(sprite_index) / 2)
 );
+
+if (
+	place_meeting(
+		x, y, 
+		[
+			obj_black_seadevil
+		]
+	)
+) {
+	instance_destroy(id, true);
+}
