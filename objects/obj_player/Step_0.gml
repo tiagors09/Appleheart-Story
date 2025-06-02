@@ -78,3 +78,15 @@ if (
 ) {
 	instance_destroy(id, true);
 }
+
+var _door = collision_point(
+	x,
+	y - (sprite_height / 2),
+	obj_door,
+	false,
+	true
+);
+
+
+if (_door)
+	_door.open()

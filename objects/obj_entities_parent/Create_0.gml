@@ -3,4 +3,4 @@ tileset_collision = layer_tilemap_get_id(
 );
 
 step = 8;
-debug = true;
+debug = false;
