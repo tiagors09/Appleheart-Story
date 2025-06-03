@@ -72,7 +72,8 @@ if (
 	place_meeting(
 		x, y, 
 		[
-			obj_black_seadevil
+			obj_black_seadevil,
+			obj_harpoon
 		]
 	)
 ) {
